@@ -77,24 +77,66 @@ const isFullAge = currentYear - birthYear >= Fullage
 
 // 6 Условные операторы 
 
-let courseStatus = "ready"
+// let courseStatus = "ready"
  
-if (courseStatus === "ready") {
-    console.log("Курс уже готов и его можно проходить")
+// if (courseStatus === "ready") {
+//     console.log("Курс уже готов и его можно проходить")
+// }
+
+// if (courseStatus === "fail") {
+//     console.log("Курс закончен")
+// } else {
+//     console.log("Курс пока находиться в процессе")
+// }
+
+// // === строгое равно
+
+// let isReady = false
+
+// if (isReady) {   //(isReady === true)
+//     console.log ("Все готово!")
+// } else {
+//     console.log ("Все не готово!")
+// }
+
+
+
+
+
+
+
+// 7 Булевая логика
+
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators
+
+
+
+// 8 Функции
+
+//https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Functions
+
+function calculateAge(year) {
+    return 2022 - year
 }
 
-if (courseStatus === "fail") {
-    console.log("Курс закончен")
-} else {
-    console.log("Курс пока находиться в процессе")
+// let myAge = calculateAge(2004)
+
+// console.log(myAge)
+
+console.log (calculateAge(2004))
+
+
+
+function logInfoAbout (name, year) {
+    let age = calculateAge(year)           //создаем переменную вызвав функцию calculate и передать параметр year
+
+    if (age > 0) {
+        console.log("Человек по имени " + name + " сейчас имеет возраст " + age )
+    } else {
+        console.log ("ERROR!")
+    }
 }
 
-// === строгое равно
+logInfoAbout("Айсулуу", 2004) 
+logInfoAbout("Баястан", 2030) 
 
-let isReady = false
-
-if (isReady) {   //(isReady === true)
-    console.log ("Все готово!")
-} else {
-    console.log ("Все не готово!")
-}
