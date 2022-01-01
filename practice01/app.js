@@ -166,12 +166,49 @@ const isFullAge = currentYear - birthYear >= Fullage
 
 // 10 Циклы
 
-let cars = ["mazda, mercedes, ford", 1970, false]
+// let cars = ["mazda, mercedes, ford", 1970, false]
 
-for (let i = 0; i < cars.length; i++ ) {
-   let car = cars[i]
+// // for (let i = 0; i < cars.length; i++ ) {
+// //    let car = cars[i]
 
-   console.log(car)
+// //    console.log(car)
+// // }
+
+// for (let car of cars) {
+//     console.log(car)                                               //получаем одинаковый результат с создание новой перменнойс циклом через for of
+// }
+
+
+
+
+
+// 11 Объкты   - струкрута данных. 
+
+//Группируем опр кол-во различных значений. Отличие от массива в том, что в объекте создаем структуры
+
+
+// let person = new Object ({})                                       // вариант для создания объекта
+
+let person = { 
+    //ключ + значение
+    firstName: "Aisuluu",
+    lastName: "Baiyshova",
+    birthYear: 2004,
+    languages: ["Ru", "Eng", "Kg"],
+    hasHusband: false,
+    greet: function() {
+        console.log("greet from person")
+    }
 }
+
+console.log(person.firstName)                                        // пишу ключ, чтобы вывести значение
+console.log(person["lastName"])                                      // второй вариант выведения значения
+
+let key = "languages"
+console.log(person[key])                                             // вариант выведения всего элемента
+person.hasHusband = true                                             // поменяли boolean значение 
+console.log(person)
+person.greet()                                                       // второй вариант выведения всего элемента
+
 
 
