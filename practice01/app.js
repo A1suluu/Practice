@@ -146,18 +146,32 @@ const isFullAge = currentYear - birthYear >= Fullage
 
 //9 Массивы 
 
+// let cars = ["mazda, mercedes, ford", 1970, false]
+
+// // let cars = new Array "mazda, mercedes, ford", 1970, false)    //new array выполняет ту же функцию, что и []
+
+// console.log(cars[0])                                             // вызываем элемент по индексу
+// console.log(cars[0].length)                                      // получаем число, сколько элементов внутри массива
+// console.log(cars.length)   
+
+// cars[1] = "Toyto"                                                // можем менять значение элемента вне массива
+// cars[3] = "Lexus"                                                // создать значение элемента вне массива
+// cars[cars.length] = "Kia"                                        // создаем элемент в конце массива
+
+// console.log(cars)          
+
+
+
+
+
+// 10 Циклы
+
 let cars = ["mazda, mercedes, ford", 1970, false]
 
-// let cars = new Array "mazda, mercedes, ford", 1970, false)    //new array выполняет ту же функцию, что и []
+for (let i = 0; i < cars.length; i++ ) {
+   let car = cars[i]
 
-console.log(cars[0])                                             // вызываем элемент по индексу
-console.log(cars[0].length)                                      // получаем число, сколько элементов внутри массива
-console.log(cars.length)   
-
-cars[1] = "Toyto"                                                // можем менять значение элемента вне массива
-cars[3] = "Lexus"                                                // создать значение элемента вне массива
-cars[cars.length] = "Kia"                                        // создаем элемент в конце массива
-
-console.log(cars)                                               
+   console.log(car)
+}
 
 
