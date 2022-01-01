@@ -115,28 +115,49 @@ const isFullAge = currentYear - birthYear >= Fullage
 
 //https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Functions
 
-function calculateAge(year) {
-    return 2022 - year
-}
+// function calculateAge(year) {
+//     return 2022 - year
+// }
 
 // let myAge = calculateAge(2004)
 
 // console.log(myAge)
 
-console.log (calculateAge(2004))
+// console.log (calculateAge(2004))
 
 
 
-function logInfoAbout (name, year) {
-    let age = calculateAge(year)           //создаем переменную вызвав функцию calculate и передать параметр year
+// function logInfoAbout (name, year) {
+//     let age = calculateAge(year)                //создаем переменную вызвав функцию calculate и передать параметр year
 
-    if (age > 0) {
-        console.log("Человек по имени " + name + " сейчас имеет возраст " + age )
-    } else {
-        console.log ("ERROR!")
-    }
-}
+//     if (age > 0) {
+//         console.log("Человек по имени " + name + " сейчас имеет возраст " + age )
+//     } else {
+//         console.log ("ERROR!")
+//     }
+// }
 
-logInfoAbout("Айсулуу", 2004) 
-logInfoAbout("Баястан", 2030) 
+// logInfoAbout("Айсулуу", 2004) 
+// logInfoAbout("Баястан", 2030) 
+
+
+
+
+
+//9 Массивы 
+
+let cars = ["mazda, mercedes, ford", 1970, false]
+
+// let cars = new Array "mazda, mercedes, ford", 1970, false)    //new array выполняет ту же функцию, что и []
+
+console.log(cars[0])                                             // вызываем элемент по индексу
+console.log(cars[0].length)                                      // получаем число, сколько элементов внутри массива
+console.log(cars.length)   
+
+cars[1] = "Toyto"                                                // можем менять значение элемента вне массива
+cars[3] = "Lexus"                                                // создать значение элемента вне массива
+cars[cars.length] = "Kia"                                        // создаем элемент в конце массива
+
+console.log(cars)                                               
+
 
