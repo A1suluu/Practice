@@ -103,9 +103,28 @@ function summ(a, b) {
 // let res = summ(10, 15)
 // console.log(res)
 
-// сокращенная форма 
-console.log(summ(10, 15));
+// // сокращенная форма 
+// console.log(summ(10, 15));
 
 
-let result = summ(summ(10, 15), summ(20,20));       // ?????? почему еслитут убраться первую переменную код показывает 40?
-console.log(result)
+// let result = summ(summ(10, 15), summ(20,20));       
+// console.log(result)
+
+// передали аргумент как функцию и поэтому если убрать первый summ, код ломается. так как мы передаем так функцию
+
+
+function diff (a , b){
+    return a - b;
+}
+
+
+function doSomething(func){   // есть функиция doSomething, она принимает в себя в качестве аргумента 
+    let x = 10;               // принимает  эту функицю 
+    let y = 15;
+    let result = func(x, y);  //  func используесть как параметр и запускается такими аргументами
+    console.log(result);
+}
+
+doSomething(summ);
+doSomething(diff);
+
