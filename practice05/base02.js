@@ -18,4 +18,4 @@ console.log( 2 / undefined)                       // получаем NaN
 let weird = 2 / undefined
 console.log(isNaN(weird))                         // является ли число NaN. проверка
 console.log(Number.isNaN(4))
-console.log(Number.isFinite(42))                  // к ff
+console.log(Number.isFinite(42))                  // к 
