@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // ======= Методы перебора Массива =======
+        // let arr = ["toyoto", "mercedes", "cars", "----"]
+
+        // for (let i = 0; i < arr.length; i++) {
+        //     // if (arr[i] == "cars") {
+        //     //     console.log(true)
+        //     // }
+        //     console.log(arr[i])
+        // }
+
+        // for (let allArr of arr) {
+        //     console.log(allArr)
+        // }
+
+        // for (let test3 in arr) {
+        //     console.log(arr[test3])
+        // }
+
+
+
+        // ======= Методы Массива =======
+        // let songs = new Array ()
+        // songs = [ "Джаз", "Блюз"]
+
+        // let songs = ["Джаз", "Блюз"]
+        // songs.push("Рок-н-ролл")
+        // console.log(songs)
+
+        // for(let i = 0; i < songs.length - 1; i++ ) {
+        //     songs.push("Классика")
+        // }    
+        
+        // songs[Math.floor((songs.length - 1) / 2)] = "Классика";
+        // console.log(songs)
+        // songs.shift()
+        // console.log(songs)
+        // songs.unshift("Рэп", "Регги")
+        // console.log(songs)
+
+
+        // ======= Сумма введённых чисел =======
+
+        // let userNum = prompt()
+        // while(true) {
+        //     let userArr = []
+        //     if (userArr === " " || userArr === null || userArr === "stop") {
+        //         break
+        //     }
+        //     userArr.push(+userNum)  
+        // }
+        
+        // console.log(userArr )
+
+        // function sumInput() {
+
+        // let numbers = [];
+
+        // while (true) {
+
+        // let value = prompt("Введите число", 0);
+
+        // // Прекращаем ввод?
+        // if (value === "" || value === null || !isFinite(value)) break;
+
+        // numbers.push(+value);
+        // }
+
+        // let sum = 0;
+        // for (let number of numbers) {
+        // sum += number;
+        // }
+        // return sum;
+        // }
+
+        // alert( sumInput() );
+
+
+
+
+        function getMaxSubSum(arr) {
+        let maxSum = 0; // если элементов не будет - возвращаем 0
+
+        for (let i = 0; i < arr.length; i++) {
+            let sumFixedStart = 0;
+            for (let j = i; j < arr.length; j++) {
+            sumFixedStart += arr[j];
+            maxSum = Math.max(maxSum, sumFixedStart);
+            }
+        }
+
+        return maxSum;
+        }
+
+        console.log( getMaxSubSum([-1, 2, 3, -9]) )
+
+    </script>
+</body>
+</html>

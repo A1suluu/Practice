@@ -148,7 +148,7 @@ const isFullAge = currentYear - birthYear >= Fullage
 
 // let cars = ["mazda, mercedes, ford", 1970, false]
 
-// // let cars = new Array "mazda, mercedes, ford", 1970, false)    //new array выполняет ту же функцию, что и []
+// // let cars = new Array ("mazda, mercedes, ford", 1970, false)    //new array выполняет ту же функцию, что и []
 
 // console.log(cars[0])                                             // вызываем элемент по индексу
 // console.log(cars[0].length)                                      // получаем число, сколько элементов внутри массива

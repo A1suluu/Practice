@@ -99,16 +99,112 @@ arr.splice([start], [deleteCount, newElements])
 
 // ============= 10. Цикл for ( of ). Обход массива циклом for ( of ) =============
 
-console.log("item");
 
-let autoBrands = ["Toyota", "BMW" , "Lexus", "Mazda"];
 
-for (let item of autoBrands) {           
-    console.log(item);
-}
+
+
+// console.log("item");
+
+// let autoBrands = ["Toyota", "BMW" , "Lexus", "Mazda"];
+
+// for (let item of autoBrands) {           
+//     console.log(item);
+// }
 
 
 //for...of Оператор создает цикл, повторяющий повторяющиеся объекты, в том числе: встроенные StringArray
 
 
+
+
+
+
+
+
+
 // ============= 11. Метод .forEach() для обхода массивов =============
+
+
+// Метод forEach() выполняет указанную функцию один раз для каждого элемента в массиве.
+
+
+
+// let autoBrands = ["Toyota", "BMW" , "Lexus", "Mazda"];
+
+
+// // вариант как передать фукцию  forEach
+// autoBrands.forEach(function(item, index){
+//     console.log(`${item}  => ${index}`);
+// }) 
+
+
+//  2 вариант как передать фукцию  forEach
+// autoBrands.forEach(test);
+
+// function test (bran, i) {               
+//     console.log(`${bran}  => ${i}`);
+// }
+
+
+// 3 вариант как передать фукцию  forEach
+
+// autoBrands.forEach(brand, i) => {
+//     console.log(`${brand}  => ${i}`);
+// });
+
+
+
+
+
+
+
+/*
+callback - Функция, которая будет вызвана для каждого элемента массива. Она принимает от одного до трёх аргументов:
+currentValue - Текущий обрабатываемый элемент в массиве.
+indexНеобязательный - Индекс текущего обрабатываемого элемента в массиве.
+arrayНеобязательный - Массив, по которому осуществляется проход.
+thisArg - Необязательный параметр. Значение, используемое в качестве this при вызове функции callbac
+*/
+
+
+
+
+
+// ============= 12. Объект =============
+
+
+
+// let person = {
+//     userName: "Vlad",
+//     age: 23,
+//     isMarried: false
+// }
+
+// console.log(person);
+// console.log(person.userName);
+
+// person.profession = "Developer";
+// console.log(person);
+
+// delete person.age;
+// console.log(person);
+
+
+
+
+
+
+
+// ============= 13. Методы в объектах =============
+
+
+// Свойство объекты в котором записана функция, называется методом объекта
+
+let person = {
+        userName: "Vlad",
+        age: 23,
+        isMarried: false,
+        sayHi: function(){
+            console.log("Hello!")
+        }
+    }
