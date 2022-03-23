@@ -88,22 +88,34 @@
 
 
 
-        function getMaxSubSum(arr) {
-        let maxSum = 0; // если элементов не будет - возвращаем 0
+        // function getMaxSubSum(arr) {
+        // let maxSum = 0; // если элементов не будет - возвращаем 0
 
-        for (let i = 0; i < arr.length; i++) {
-            let sumFixedStart = 0;
-            for (let j = i; j < arr.length; j++) {
-            sumFixedStart += arr[j];
-            maxSum = Math.max(maxSum, sumFixedStart);
-            }
+        // for (let i = 0; i < arr.length; i++) {
+        //     let sumFixedStart = 0;
+        //     for (let j = i; j < arr.length; j++) {
+        //     sumFixedStart += arr[j];
+        //     maxSum = Math.max(maxSum, sumFixedStart);
+        //     }
+        // }
+
+        // return maxSum;
+        // }
+
+        // console.log( getMaxSubSum([-1, 2, 3, -9]) )
+
+
+
+        let arr = [5, 3, 8, 1];
+
+        function  filterRangeInPlace(arr, a, b) {
+            return arr.splice(item => (a <= item && item <= b))
         }
 
-        return maxSum;
-        }
+        let fl = filterRangeInPlace(arr, 5, 1)
 
-        console.log( getMaxSubSum([-1, 2, 3, -9]) )
-
+        console.log(arr)
+        console.log(fl)
     </script>
 </body>
 </html>
