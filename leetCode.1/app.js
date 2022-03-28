@@ -114,3 +114,40 @@ Numeral	Calculation
 //         if 
 //     }
 // }
+
+
+// 35. Search Insert Position
+// var searchInsert = function (nums, target) {
+
+//     for (let index = 0; index < nums.length; index++) {
+//       if (target <= nums[index]) {
+//         return index;
+//       }
+//     }
+//     return nums.length;
+//   };
+
+// var searchInsert = function(nums, target) {
+//     nums.indexOf(target);  
+//     return nums
+// };
+
+
+
+
+//2. Add Two Numbers
+
+/*
+Input: l1 = [2,4,3], l2 = [5,6,4]
+Output: [7,0,8]
+Explanation: 342 + 465 = 807.
+*/
+
+let l1 = [2,4,3], l2 = [5,6,4]
+
+let result = 0;
+
+
+//  
+
+
